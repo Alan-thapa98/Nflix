@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% block title %}
+homepage
+{% endblock title %}
+
+
+{% load static %}
+{% block body %}
+
+<style>
+  .border_top_bottom {
+    border-top: 4px solid rgb(138 138 165);
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+
+  .img {
+    height: 189px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .bgimg {
+    background-image: url({% static 'bg5.jpg' %});
+    opacity: 0.9;
+    color: #fff;
+    height: 70vh;
+
+
+  }
+</style>
+
+
+
+<div class="position-relative overflow-hidden text-center bg-dark bgimg">
+  <div class="col-md-5 p-lg-5 mx-auto">
+    <h4 class="fw-normal text-danger">Welcome to Nflix .</h4>
+    <h2 class=" fw-normal  text-bold  ">Enjoy Unlimited Neplai Movies,TV Shows,drames movie explain,catroons,anime,and
+      many more </h2>
+    <a class="btn btn-danger " href="#">At Rs.350 per month</a>
+  </div>
+  <div class="product-device shadow-sm d-none d-md-block"></div>
+  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+<div class="container-fluid">
+
+  <!-- START THE FEATURETTES -->
+
+
+
+  <div class="row featurette margin-top border_top_bottom">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
+      </h2>
+      <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.
+      </p>
+    </div>
+    <div class="col-md-5 text-center">
+
+      <img src="{% static '2.jpg' %}" height="250" width="350" alt="">
+    </div>
+  </div>
+
+
+
+  <div class="row featurette margin-top border_top_bottom">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+      <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+        layout would work with some actual real-world content in place.</p>
+    </div>
+    <div class="col-md-5 text-center order-md-1">
+
+      <img src="{% static 'bg1.jpg' %}" height="250" width="350" alt="">
+    </div>
+  </div>
+
+
+
+  <div class="row featurette margin-top border_top_bottom">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+      <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended
+        to be actually read, simply here to give you a better view of what this would look like with some actual
+        content. Your content.</p>
+    </div>
+    <div class="col-md-5 text-center">
+
+      <img src="{% static '4.jpg' %}" height="250" width="350" alt="">
+    </div>
+  </div>
+
+
+
+  <!-- /END THE FEATURETTES -->
+  <!-- these is the ans and answer  -->
+<div class=" accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item bg-dark ">
+    <h2 class="accordion-header bg-dark" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+       1. what is Nflix
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class=" bg-dark text-light accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item bg-dark ">
+    <h2 class="accordion-header bg-dark" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+       2. what is Nflix
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class=" bg-dark text-light accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item bg-dark ">
+    <h2 class="accordion-header bg-dark" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+       3. what is Nflix
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class=" bg-dark text-light accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+</div><!-- /.container -->
+
+</div>
+
+
+
+
+
+<a href="/show"> watch show </a>
+
+{% endblock body %}

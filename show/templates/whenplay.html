@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block title %}
+watch video-
+{% endblock title %}
+
+{% block body %}
+{% load static %}
+<style>
+   nav {
+      display: none !important;
+   }
+
+   .video_w_h {
+      height: 100vh;
+      width: 100%;
+   }
+
+   /* custom scroll bar */
+   ::-webkit-scrollbar {
+      width: 10px;
+      display: none;
+
+
+   }
+
+   ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      display: none;
+
+
+   }
+
+   ::-webkit-scrollbar-thumb {
+      background: #888;
+      display: none;
+
+
+   }
+
+   ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+      display: none;
+
+
+   }
+</style>
+<div class="container-fluid">
+   <!-- video for the show  -->
+   <div class="row">
+      <!-- <img class="video_w_h" height='600' width='100%' src="{% static 'bg1.jpg' %}" alt=""> -->
+      <video src="{% static 'vid/Digimon_THE_LAST_EVOLUTION_(_English_)_Dub(360p).mp4' %}" controls autoplay
+         class="video_w_h"></video>
+      <!-- static 'css/bootstrap-grid.css' %} -->
+   </div>
+   <hr>
+   <!-- related videos -->
+   <h5>Related movies</h5>
+
+   <div class="row">
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+      <div class="col-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum reiciendis. Quam
+         fuga ducimus porro magnam eligendi blanditiis eaque natus!</div>
+
+   </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock body %}
